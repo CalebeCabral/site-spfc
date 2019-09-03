@@ -448,19 +448,21 @@ body {
 }
 
 .campo-cont {
-	perspective: 460px;
+	/* perspective: 460px; */
 	background: url(../assets/images/campo_gradiente.png) no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 
 .campo-cont .posicoes {
-	transform: rotateX(216deg) rotateY(0deg) rotateZ(0deg) translate(-50%, 50%);
+	/* transform: rotateX(216deg) rotateY(0deg) rotateZ(0deg) translate(-50%, 50%); */
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	left: 50%;
-	top: 49%;
+	top: 0;
+	left: 0;
+	/* left: 50%;
+	top: 49%; */
 	/* top: 0; */
 	/* background-color: rgba(255, 255, 255, 0.45); */
 	/* background: url(../assets/images/campo_temp.jpeg) no-repeat; */
@@ -493,83 +495,160 @@ body {
 } */
 
 .campo-cont .posicao#GOL {
-	bottom: 50%;
-	left: 4%;
+	bottom: 60%;
+	left: 13%;
 }
 
 .campo-cont .posicao#ZAG1 {
-	bottom: 36%;
-	left: 23%;
+	bottom: 71%;
+	left: 25%;
 }
 
 .campo-cont .posicao#ZAG2 {
-	bottom: 64%;
+	bottom: 44%;
 	left: 23%;
 }
 
 .campo-cont .posicao#LE {
+	bottom: 89%;
+	left: 33%;
+}
+
+.campo-cont .posicao#LD {
 	bottom: 16%;
 	left: 28%;
 }
 
-.campo-cont .posicao#LD {
-	bottom: 86%;
-	left: 28%;
-}
-
 .campo-cont .posicao#VOL {
-	bottom: 50%;
-	left: 42%;
+	bottom: 59%;
+	left: 40%;	
 }
 
 .campo-cont .posicao#ME {
-	bottom: 23%;
-	left: 56%;
+	bottom: 82%;
+	left: 54%;
 }
 
 .campo-cont .posicao#MD {
-	bottom: 77%;
+	bottom: 35%;
 	left: 56%;
 }
 
 .campo-cont .posicao#MC {
-	bottom: 50%;
-	left: 66%;
+	bottom: 59%;
+	left: 64%;
 }
 
 .campo-cont .posicao#AT1 {
-	bottom: 27%;
-	left: 76%;
+	bottom: 80%;
+	left: 69%;
 }
 
 .campo-cont .posicao#AT2 {
-	bottom: 73%;
-	left: 76%;
+	bottom: 38%;
+	left: 74%;
 }
 
 .card-jogador {
 	position: absolute;
-	width: 12%;
-	height: 50%;
+	width: 13%;
+	height: 52%;
 	bottom: 2.8rem;
-	transform: translate(-31%, -50%);
+	transform: translate(-20%, -60%);
 	cursor: default;
 	left: 70%;
+	overflow: visible;
 }
 
 .card-jogador .card-feixe {
-	width: 100%;
 	position: absolute;
-	bottom: -17%;
+	top: 90%;
+	z-index: 9;
+	width: 100%;
 }
 
-.card-jogador .card-dados {
+#campo .card-jogador .card-dados {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	z-index: 1;
+	padding: 7% 0;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'AvenirNext', Arial, sans-serif;
+	font-weight: 600;
+}
+
+#campo .card-jogador .card-dados__nome {
+	text-align: center;
+	font-size: 11px;
+	margin-bottom: -8px;
+	padding-top: .3rem;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+}
+
+#campo .card-jogador .card-dados__num {
+	font-size: 18px;
+	display: inline-block;
+	line-height: 0.5;
+	padding-left: .6rem;
+}
+
+#campo .card-jogador .card-dados__pos {
+	font-size: 9px;
+	display: inline-block;
+	line-height: 0.5;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+}
+
+#campo .card-jogador .card-dados__logo {
+	width: 23%;
+	position: absolute;
+	top: 27%;
+	left: 10%;
+}
+
+#campo .card-jogador .card-dados__logo img:last-child {
+	width: 80%;
+	display: block;
+	margin: 5px auto 0;
+}
+
+#campo .card-jogador .card-dados__foto {
+	position: absolute;
+	width: 55%;
+	top: 15%;
+	right: 0;
+}
+
+#campo .card-jogador .card-dados__jogadores {
+	position: absolute;
+	width: 100%;
+	height: 39%;
+	top: 55%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 1.2rem;
+}
+
+#campo .card-jogador .card-dados__jogadores p {
+	margin-bottom: 0;
+	font-size: 10px;
+	flex: 1 0 50%;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'AvenirNext', Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+}
+
+#campo .card-jogador .card-dados__jogadores p:first-child {
+	flex-basis: 100%;
+	text-align: center;
 }
 
 .card-jogador .card-bg {
@@ -585,11 +664,11 @@ body {
 @keyframes openingCards {
 	0% {
 		opacity: 0;
-		transform: translate(-32%, -30%);
+		transform: translate(-20%, -40%);
 	}
 	100% {
 		opacity: 1;
-		transform: translate(-32%, -50%);
+		transform: translate(-20%, -60%);
 	}
 }
 
@@ -730,6 +809,11 @@ body {
 	#navbar .navbar-collapse .navbar-nav li:not(:last-child) {
 		margin-right: 1rem;
 	}
+	
+	.card-jogador {
+		height: 43%;
+		transform: translate(-17%, -22%);
+	}
 }
 
 @media (max-width: 1200px) {
@@ -744,6 +828,15 @@ body {
 
 	#sobre {
 		max-height: none;
+	}
+	
+	.card-jogador {
+		height: 35.4%;
+    	transform: translate(-16%, 25%);
+	}
+
+	.card-jogador .card-dados__jogadores {
+		padding-left: 0.5rem;
 	}
 }
 
@@ -761,9 +854,26 @@ body {
 	#campo .campo-header .title {
 		text-align: center;
 	}
+
+	.campo-bg {
+		margin-top: 9rem;
+	}
+	
+	.card-jogador {
+		height: 36%;
+    	transform: translate(-16%, 20%);
+	}
 }
 
 @media (max-width: 768px) {
+
+	.banner-full {
+		min-height: 700px;
+		background-image: url(../assets/images/banner_home_mobile.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 
 	.title-stroke,
 	.title-stroke.white {
@@ -862,6 +972,20 @@ body {
 	.btn-custom {
 		font-size: 24px;
 	}
+
+	.campo-cont .posicao {
+		border: 3px solid #FFF500;
+	}
+	
+	.card-jogador {
+		width: 17%;
+		height: 40%;
+		transform: translate(-20%, 22%);
+	}
+
+	#campo .card-jogador .card-dados__jogadores {
+		padding-left: 0.4rem;
+	}
 }
 
 @media (max-width: 576px) {
@@ -880,4 +1004,79 @@ body {
 		padding-left: 2.8rem;
 		padding-right: 2.8rem;
   	}
+
+	.campo-bg {
+		margin-top: 8rem;
+	}
+	
+	.card-jogador {
+		width: 25%;
+		transform: translate(-8%, -10%);
+		height: 36%;
+	}
+
+	.campo-cont .posicao {
+		width: 7%;
+		height: 6%;
+		border: 3px solid #FFF500;
+	}
+
+	.campo-cont .posicao#GOL {
+		bottom: 14%;
+		left: 47%;
+	}
+
+	.campo-cont .posicao#ZAG1 {
+		bottom: 28%;
+		left: 32%;
+	}
+
+	.campo-cont .posicao#ZAG2 {
+		bottom: 28%;
+		left: 60%;
+	}
+
+	.campo-cont .posicao#LE {
+		bottom: 40%;
+		left: 19%;
+	}
+
+	.campo-cont .posicao#LD {
+		bottom: 40%;
+		left: 74%;
+	}
+
+	.campo-cont .posicao#VOL {
+		bottom: 48%;
+		left: 47%;
+	}
+
+	.campo-cont .posicao#ME {
+		bottom: 65%;
+		left: 29%;
+	}
+
+	.campo-cont .posicao#MD {
+		bottom: 65%;
+		left: 64%;
+	}
+
+	.campo-cont .posicao#MC {
+		bottom: 74%;
+		left: 47%;
+	}
+
+	.campo-cont .posicao#AT1 {
+		bottom: 87%;
+		left: 27%;
+	}
+
+	.campo-cont .posicao#AT2 {
+		bottom: 87%;
+		left: 66%;
+	}
+	
+	#campo .card-jogador .card-dados__jogadores {
+		padding-left: .6rem;
+	}
 }
