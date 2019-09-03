@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Escolha sua Posição</title>
+
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://kit.fontawesome.com/02c6f07d22.js"></script>
+
+</head>
+
+<body>
+	<section class="d-xl-none" id="navbar-mobile">
+		<div class="container">
+			<nav class="navbar navbar-expand-xl px-0 pt-2 pb-3">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<img src="./assets/icons/icon_hamburger_menu.png">
+				</button>
+
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/brand_logo.png">
+				</a>
+
+				<a href="#" class="nav-link shopping-cart">
+					<img src="./assets/icons/icon_shopping_cart.png">
+				</a>
+
+				<div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+					<ul class="navbar-nav align-items-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sobre o Evento</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Regulamento</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Eventos Anteriores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contato</a>
+						</li>
+					</ul>
+					<a href="#" class="nav-link participe mx-auto mt-1 py-2 px-4 w-50">
+						<i class="fas fa-angle-right mr-3"></i> Participe do evento
+					</a>
+					<a href="#" class="nav-link minha-conta mx-auto mt-3 w-50">
+						<img src="./assets/icons/icon_person_outline.png" class="mr-2">
+						<span>Minha Conta</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</section>
+
+	<section class="d-none d-xl-block" id="navbar">
+		<div class="container">
+			<nav class="navbar navbar-expand-xl px-0 pt-2 pb-3">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/brand_logo.png">
+				</a>
+
+				<div class="collapse navbar-collapse align-items-stretch mt-2" id="navbarSupportedContent">
+					<ul class="navbar-nav align-items-center mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sobre o Evento</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Regulamento</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Eventos Anteriores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contato</a>
+						</li>
+					</ul>
+					<a href="#" class="nav-link participe py-2 px-4">
+						<i class="fas fa-angle-right mr-3"></i> Participe do evento
+					</a>
+					<a href="#" class="nav-link shopping-cart mx-3">
+						<img src="./assets/icons/icon_shopping_cart.png">
+					</a>
+					<a href="#" class="nav-link minha-conta">
+						<img src="./assets/icons/icon_person_outline.png" class="mr-2">
+						<span>Minha Conta</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</section>
+
+	<section class="pb-4" id="campo">
+		<div class="bg-posicao"></div>
+
+		<div class="container py-5">
+			<div class="row text-white flex-column flex-lg-row align-items-center py-md-5 my-md-5 campo-header">
+				<div class="col">
+					<div class="title-stroke white">Escolha a sua <br>posicao no time</div>
+					<div class="title pt-2 pt-md-3 pb-4 pb-md-0">Escolha a sua <br>posicao no time</div>
+				</div>
+				<div class="col">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ligula porttitor, pretium orci
+						in,
+						sodales orci. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per
+						conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et
+						ultrices
+						posuere cubilia Curae; </p>
+				</div>
+			</div>
+
+			<div class="row text-white pt-4 campo-forms">
+				<div class="col-12 col-lg-6 pb-3">
+					<div class="title"><span class="mr-3">01</span> Dados do Jogador</div>
+					<p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ligula porttitor,
+						pretium orci in, sodales orci. In hac habitasse platea dictumst. </p>
+				</div>
+
+				<div class="col-12 pb-4">
+					<form id="dadosJogador">
+						<div class="form-row pb-3">
+							<div class="form-group col-12 col-md">
+								<label for="">Nome</label>
+								<input type="text" placeholder="OSWALDO">
+							</div>
+							<div class="form-group col-12 col-md">
+								<label for="">Sobrenome</label>
+								<input type="text" placeholder="PEREIRA">
+							</div>
+							<div class="form-group col-12 col-md">
+								<label for="">Apelido</label>
+								<input type="text" placeholder="SR. OSWALDO">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-12 col-md-6 col-lg-3">
+								<label for="">Telefone</label>
+								<input type="text">
+							</div>
+							<div class="form-group col-12 col-md-6 col-lg-3">
+								<label for="">CPF</label>
+								<input type="text">
+							</div>
+							<div class="form-group col-12 col-md-6 col-lg-3">
+								<label for="">Cidade</label>
+								<input type="text">
+							</div>
+							<div class="form-group col-12 col-md-6 col-lg-3">
+								<label for="">Estado</label>
+								<input type="text">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-12 col-lg-6 mb-0 mb-md-5 pb-0 pb-3">
+					<div class="title"><span class="mr-3">02</span> Posicao no time</div>
+					<p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ligula porttitor,
+						pretium orci in, sodales orci. In hac habitasse platea dictumst. </p>
+				</div>
+
+				<div class="d-none d-md-block col-md-6"></div>
+
+				<div class="col-12 col-lg-3">
+					<form id="posicaoTime">
+						<div class="form-row pb-3">
+							<div class="form-group col">
+								<label for="">Nome na camisa</label>
+								<input type="text">
+							</div>
+						</div>
+
+						<div class="form-row pb-3">
+							<div class="form-group col">
+								<label for="">Posição</label>
+								<select name="" id="">
+									<option value="">Posição</option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col">
+								<label for="">Número na Camisa</label>
+								<input type="text">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-12 col-lg-9">
+					<div class="campo-cont d-flex d-flex align-items-end h-100">
+						<div class="posicoes">
+							<div class="posicao" id="GOL"></div>
+							<div class="posicao" id="ZAG1"></div>
+							<div class="posicao" id="ZAG2"></div>
+							<div class="posicao" id="LE"></div>
+							<div class="posicao" id="LD"></div>
+							<div class="posicao" id="VOL"></div>
+							<div class="posicao" id="ME"></div>
+							<div class="posicao" id="MD"></div>
+							<div class="posicao" id="MC"></div>
+							<div class="posicao" id="AT1"></div>
+							<div class="posicao" id="AT2"></div>
+						</div>
+
+						<img class="img-fluid" src="./assets/images/campo_posicoes.png">
+
+						<div class="card-jogador opening">
+							<div class="card-bg">
+								<img class="img-fluid" src="./assets/images/card_bg.png">
+							</div>
+							<img class="card-feixe" src="./assets/images/feixe.png">
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5" id="pacotes">
+		<div class="container">
+			<div class="row pb-3">
+				<div class="col">
+					<div class="title"><span class="mr-3">03</span> Pacotes</div>
+				</div>
+			</div>
+
+			<div class="row align-items-end">
+				<div class="col-12 col-md-6 col-lg-3 pb-4 pacote-group">
+					<h4><br>Jogos da Manhã</h4>
+					<div class="pacote-options">
+						<label class="pacote-option" for="socioManha">
+							<input type="radio" name="pacotes" id="socioManha">
+							<div class="pacote-label w-100 text-center py-3">
+								Socio Torcedor <br>
+								<span>R$ 1.788,00</span>
+							</div>
+						</label>
+
+						<label class="pacote-option" for="normalManha">
+							<input type="radio" name="pacotes" id="normalManha">
+							<div class="pacote-label w-100 text-center py-3">
+								Normal <br>
+								<span>R$ 1.788,00</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 pb-4 pacote-group">
+					<h4><br>Jogo 04</h4>
+					<div class="pacote-options">
+						<label class="pacote-option" for="socio04">
+							<input type="radio" name="pacotes" id="socio04">
+							<div class="pacote-label w-100 text-center py-3">
+								Socio Torcedor <br>
+								<span>R$ 2.088,00</span>
+							</div>
+						</label>
+
+						<label class="pacote-option" for="normal04">
+							<input type="radio" name="pacotes" id="normal04">
+							<div class="pacote-label w-100 text-center py-3">
+								Normal <br>
+								<span>R$ 2.188,00</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 pb-4 pacote-group">
+					<h4>Jogos 5 e 6, <br>Desafio Cicinho x Cristiane</h4>
+					<div class="pacote-options">
+						<label class="pacote-option" for="socioDesafio">
+							<input type="radio" name="pacotes" id="socioDesafio">
+							<div class="pacote-label w-100 text-center py-3">
+								Socio Torcedor <br>
+								<span>R$ 2.388,00</span>
+							</div>
+						</label>
+
+						<label class="pacote-option" for="normalDesafio">
+							<input type="radio" name="pacotes" id="normalDesafio">
+							<div class="pacote-label w-100 text-center py-3">
+								Normal <br>
+								<span>R$ 2.488,00</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3 pb-4 pacote-group">
+					<h4><br>Jogos pratas da casa</h4>
+					<div class="pacote-options">
+						<label class="pacote-option" for="socioPratas">
+							<input type="radio" name="pacotes" id="socioPratas">
+							<div class="pacote-label w-100 text-center py-3">
+								Socio Torcedor <br>
+								<span>R$ 2.688,00</span>
+							</div>
+						</label>
+
+						<label class="pacote-option" for="normalPratas">
+							<input type="radio" name="pacotes" id="normalPratas">
+							<div class="pacote-label w-100 text-center py-3">
+								Normal <br>
+								<span>R$ 2.788,00</span>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row py-5">
+				<div class="col d-flex justify-content-center">
+					<a href="#" class="btn-custom">
+						<img src="./assets/images/link_bg.png">
+						<span>Estou Preparado!</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="container">
+			<div class="row px-0">
+				<div class="col d-flex justify-content-center">
+					<nav class="navbar navbar-expand-lg px-0 py-2">
+						<ul class="navbar-nav flex-row flex-wrap align-items-center mr-auto links-footer">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre o Evento</a>
+							</li>
+							<li class="nav-item pl-3">
+								<a class="nav-link" href="#">Regulamento</a>
+							</li>
+							<li class="nav-item pl-sm-3">
+								<a class="nav-link" href="#">Eventos Anteriores</a>
+							</li>
+							<li class="nav-item pl-3">
+								<a class="nav-link" href="#">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row direitos px-0 py-3">
+				<div class="col d-flex justify-content-center">
+					<p class="m-0 text-center">Vou jogar no Morumbi <br class="d-block d-md-none">@ Todos direitos
+						reservados
+						2019
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

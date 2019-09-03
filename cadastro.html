@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cadastro</title>
+
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://kit.fontawesome.com/02c6f07d22.js"></script>
+
+</head>
+
+<body>
+	<section id="navbar">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg px-0 pt-2 pb-3">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/brand_logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse align-items-stretch mt-2" id="navbarSupportedContent">
+					<ul class="navbar-nav align-items-center mr-auto">
+						<li class="nav-item mr-5">
+							<a class="nav-link" href="#">Sobre o Evento</a>
+						</li>
+						<li class="nav-item mr-5">
+							<a class="nav-link" href="#">Regulamento</a>
+						</li>
+						<li class="nav-item mr-5">
+							<a class="nav-link" href="#">Eventos Anteriores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contato</a>
+						</li>
+					</ul>
+					<a href="#" class="nav-link participe py-2 px-4">
+						<i class="fas fa-angle-right mr-3"></i> Participe do evento
+					</a>
+					<a href="#" class="nav-link shopping-cart mx-5">
+						<img src="./assets/icons/icon_shopping_cart.png">
+					</a>
+					<a href="#" class="nav-link minha-conta">
+						<img src="./assets/icons/icon_person_outline.png" class="mr-2">
+						<span>Minha Conta</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</section>
+
+	<section id="login">
+		<div class="bg-login"></div>
+
+		<div class="container py-0 py-xl-5">
+			<div class="row conta-title pt-4 pb-5">
+				<div class="col d-flex justify-content-center pt-lg-4 pt-xl-0">
+					<h1>Cadastro</h1>
+				</div>
+			</div>
+
+			<div class="row justify-content-center forms mb-5 pb-5">
+				<div class="col-12 col-xl-10">
+					<form class="login-form py-4 px-sm-4 h-100">
+						<div class="form-header pb-4 pt-2">
+							<h2 class="m-0">Ainda não sou cadastrado</h2>
+						</div>
+
+						<div class="form-body pt-3 pb-5 px-4">
+							<div class="row">
+								<div class="col-12 col-xl-6 pr-3">
+									<div class="input-cont w-100 py-3">
+										<div class="form-row">
+											<label class="col-3 col-form-label" for="">Nome</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">Sobrenome</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">País</label>
+											<div class="col">
+												<select class="w-100" name="" id="">
+													<option value="">Brasil</option>
+													<option value="">Botsuana</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">CEP</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">Endereço</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-xl-6 pl-3">
+									<div class="input-cont w-100 py-3">
+										<div class="form-row">
+											<label class="col-3 col-form-label" for="">Cidade</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">Bairro</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">Telefone</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+
+										<div class="form-row mt-4">
+											<label class="col-3 col-form-label" for="">Celular</label>
+											<div class="col">
+												<input class="w-100" type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn-submit mt-3" type="button">Entrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="container">
+			<div class="row px-0">
+				<div class="col d-flex justify-content-center">
+					<nav class="navbar navbar-expand-lg px-0 pl-5 pl-md-0 py-2">
+						<ul class="navbar-nav flex-row flex-wrap align-items-center mr-auto links-footer">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre o Evento</a>
+							</li>
+							<li class="nav-item pl-3">
+								<a class="nav-link" href="#">Regulamento</a>
+							</li>
+							<li class="nav-item pl-sm-3">
+								<a class="nav-link" href="#">Eventos Anteriores</a>
+							</li>
+							<li class="nav-item pl-3">
+								<a class="nav-link" href="#">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row direitos px-0 py-3">
+				<div class="col d-flex justify-content-center">
+					<p class="m-0 text-center">Vou jogar no Morumbi <br class="d-block d-md-none">@ Todos direitos
+						reservados
+						2019
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

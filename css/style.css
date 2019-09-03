@@ -1,0 +1,883 @@
+@import url(./fonts.css);
+
+body {
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.navbar {
+	font-family: "OpenSans", Arial, sans-serif;
+}
+
+.navbar a {
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #000;
+	min-height: 45px;
+}
+
+#navbar .navbar-collapse .navbar-nav li:not(:last-child) {
+	margin-right: 3rem;
+}
+
+.navbar-nav .nav-link {
+	white-space: nowrap;
+}
+
+.navbar .participe {
+	background-image: linear-gradient(to right, #FF0000 40%, #C90000);
+	border-radius: 60px;
+	color: #FFF;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar .shopping-cart {
+	width: 45px;
+	border-radius: 50%;
+	background-color: #EBEBEB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar .minha-conta {
+	border: 1px solid #E8E8E8;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.banner-full {
+	min-height: 685px;
+	background-image: url(../assets/images/banner_home.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#sobre .col-12 {
+	max-height: 740px;
+}
+
+.estatisticas {
+	font-family: "AvenirNext", Arial, sans-serif;
+	transform: translateY(-8%);
+}
+
+.stats-table {
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 3px 46px rgba(0, 0, 0, .15);
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.stats-table thead {
+	background-color: #000;
+	color: #FFF;
+}
+
+.stats-table tbody tr td {
+	padding: .7rem 0rem;
+	border-top: 1px solid #f0f0f0;
+	font-size: 18px;
+}
+
+.stats-table tbody tr td:first-child {
+	width: 40%;
+	text-align: right;
+	padding-left: 2.5rem;
+	padding-right: .5rem;
+	font-size: 72px;
+	color: #707070;
+	font-weight: 900;
+}
+
+.stats-table tbody tr td:last-child {
+	text-align: left;
+	padding-left: .5rem;
+	padding-right: 2.5rem;
+	color: #707070;
+	font-weight: 900;
+}
+
+.stats-table tbody tr td:last-child h3 {
+	margin: 0;
+	color: #FF0000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.jogador-img {
+	z-index: 1;
+	margin-left: -60px;
+}
+
+.texto {
+	z-index: 2;
+	position: relative;
+}
+
+#sobre .texto {
+	padding-bottom: 8rem;
+}
+
+.texto h1 {
+	text-transform: uppercase;
+	font-size: 90px;
+	font-family: 'Brushield';
+	font-style: italic;
+	position: relative;
+	z-index: 1;
+}
+
+.texto p {
+	color: #898989;
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.btn-custom {
+	font-family: 'Brushield';
+	font-size: 33px;
+	font-style: italic;
+	letter-spacing: 1px;
+	color: #FFF;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+}
+
+.btn-custom:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.btn-custom img {
+	position: absolute;
+	width: 100%;
+}
+
+.btn-custom span {
+	position: relative;
+	z-index: 1;
+	padding-left: 2rem;
+	padding-right: 1.4rem;
+}
+
+#posicao {
+	padding: 5rem 0rem 0rem;
+	background-color: #F2F2F2;
+}
+
+#posicao .texto {
+	padding-top: 3rem;
+}
+
+.campo-img {
+	position: relative;
+	right: 0;
+	top: 0;
+}
+
+#aftermovie {
+	background-color: #F2F2F2;
+	padding-top: 10rem;
+	position: relative;
+}
+
+#aftermovie .texto {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+#aftermovie .texto h1 {
+	text-align: center;
+}
+
+#aftermovie .texto h1 span {
+	color: #FFF;
+}
+
+#aftermovie .video {
+	height: 585px;
+	background-image: url(../assets/images/movie_bg.png);
+	background-position: center;
+}
+
+#depoimentos {
+	padding: 4rem 0rem 5rem;
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+.depoimentos-cont {
+	display: flex;
+	position: relative;
+}
+
+.depoimentos-cont .ctrl {
+	position: absolute;
+	width: 100%;
+	top: 45%;
+}
+
+.depoimentos-cont .ctrl > button {
+	border: 0;
+	background-color: #C4C4C4;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	color: #FFF;
+	position: absolute;
+}
+
+.depoimentos-cont .ctrl .btn-prev {
+	transform: translateX(-100%);
+}
+
+.depoimentos-cont .ctrl .btn-next {
+	right: 0;
+	transform: translateX(100%);
+}
+
+.user-depoimento {
+	display: flex;
+	align-items: flex-start;
+	padding-top: .5rem;
+	margin-right: .5rem;
+}
+
+.user-depoimento .user-foto {
+	margin-right: 1rem;
+}
+
+.user-depoimento .user-foto img {
+	width: 85px
+}
+
+.user-depoimento .user-msg {
+	background-color: #FFF;
+	padding: 2rem;
+	color: #000;
+	overflow: hidden;
+	box-shadow: 0px 3px 76px rgba(0, 0, 0, .15);
+}
+
+.user-depoimento .user-msg span {
+	color: #FF0000;
+	font-family: "AvenirNext", Arial, sans-serif;
+	padding-bottom: 1rem;
+}
+
+#eventosAnteriores {
+	padding: 4rem 0rem 6rem;
+	position: relative;
+}
+
+.posts {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.posts-card {
+	border: 1px solid #D1D1D1;
+}
+
+.post-img {
+	max-height: 230px;
+	overflow-y: hidden;
+}
+
+.post-img img {
+	width: 100%;
+}
+
+.post-texto {
+	padding: 1rem;
+}
+
+.post-texto h4 {
+	color: #FF0000;
+	font-family: 'AvenirNext';
+}
+
+.post-texto .post-chamada {
+	font-family: 'OpenSans';
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#footer {
+	background-color: #3E3E3E;
+	color: #FFF;
+	font-size: 14px;
+	font-family: 'OpenSans', Arial, sans-serif;
+	letter-spacing: 1px;
+}
+
+#footer.bottom-0 {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+#footer .navbar a {
+	font-size: 14px;
+	color: #FFF;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+#footer hr {
+ 	margin-top: 0rem;
+	margin-bottom: 0rem;
+	border: 0;
+	border-top: 1px solid #707070;
+}
+
+#campo {
+	background-color: #000;
+}
+
+#campo .bg-posicao {
+	position: absolute;
+	background-image: url(../assets/images/bg_posicao.png);
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-height: 586px;
+	width: 100%;
+}
+
+.title-stroke {
+	text-transform: uppercase;
+	font-family: 'AvenirNext', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 94px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	white-space: nowrap;
+	opacity: .17;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	-webkit-text-stroke: 2px #000;
+	-webkit-text-fill-color: transparent;
+}
+
+#aftermovie .title-stroke {
+	text-align: center;
+}
+
+.title-stroke.white {
+	font-size: 86px;
+	-webkit-text-stroke: 2px #FFF;
+}
+
+.title {
+	font-family: 'Brushield';
+	font-size: 55px;
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: 6rem;
+	z-index: 1;
+	position: relative;
+}
+
+.title span {
+	color: #FF0000;
+}
+
+#campo p {
+	font-family: 'OpenSans', Arial, sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.6rem;
+	font-size: 18px;
+}
+
+#campo .campo-header .title {
+	font-size: 82px;
+}
+
+.campo-forms {
+	font-family: 'AvenirNext', Arial, sans-serif;
+}
+
+.campo-forms label {
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.campo-forms input, .campo-forms select {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 0;
+	border: 1px solid #FFF;
+	background-color: transparent;
+	padding: 1rem 1rem .8rem;
+	font-size: 20px;
+	font-weight: 600;
+	color: #FFF;
+	transition: all .15s ease-in-out;
+}
+
+.campo-forms select {
+	height: 60px;
+}
+
+.campo-forms input:focus, .campo-forms select:focus {
+	outline: 0;
+	border-color: #FF0000;
+}
+
+.campo-forms input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.campo-cont {
+	perspective: 460px;
+	background: url(../assets/images/campo_gradiente.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.campo-cont .posicoes {
+	transform: rotateX(216deg) rotateY(0deg) rotateZ(0deg) translate(-50%, 50%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 49%;
+	/* top: 0; */
+	/* background-color: rgba(255, 255, 255, 0.45); */
+	/* background: url(../assets/images/campo_temp.jpeg) no-repeat; */
+	/* background-size: 103% 104%; */
+	/* background-position: center; */
+}
+
+.campo-cont .posicao {
+	width: 5%;
+	height: 8%;
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 50%;
+	border: 5px solid #FFF500;
+	cursor: pointer;
+	transform: translateY(50%);
+}
+
+/* .campo-cont .posicao.active::after {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 14px;
+	background-color: #000;
+	border-radius: 45%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+} */
+
+.campo-cont .posicao#GOL {
+	bottom: 50%;
+	left: 4%;
+}
+
+.campo-cont .posicao#ZAG1 {
+	bottom: 36%;
+	left: 23%;
+}
+
+.campo-cont .posicao#ZAG2 {
+	bottom: 64%;
+	left: 23%;
+}
+
+.campo-cont .posicao#LE {
+	bottom: 16%;
+	left: 28%;
+}
+
+.campo-cont .posicao#LD {
+	bottom: 86%;
+	left: 28%;
+}
+
+.campo-cont .posicao#VOL {
+	bottom: 50%;
+	left: 42%;
+}
+
+.campo-cont .posicao#ME {
+	bottom: 23%;
+	left: 56%;
+}
+
+.campo-cont .posicao#MD {
+	bottom: 77%;
+	left: 56%;
+}
+
+.campo-cont .posicao#MC {
+	bottom: 50%;
+	left: 66%;
+}
+
+.campo-cont .posicao#AT1 {
+	bottom: 27%;
+	left: 76%;
+}
+
+.campo-cont .posicao#AT2 {
+	bottom: 73%;
+	left: 76%;
+}
+
+.card-jogador {
+	position: absolute;
+	width: 12%;
+	height: 50%;
+	bottom: 2.8rem;
+	transform: translate(-31%, -50%);
+	cursor: default;
+	left: 70%;
+}
+
+.card-jogador .card-feixe {
+	width: 100%;
+	position: absolute;
+	bottom: -17%;
+}
+
+.card-jogador .card-dados {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.card-jogador .card-bg {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.card-jogador.opening {
+	/* animation: openingCards .5s; */
+}
+
+@keyframes openingCards {
+	0% {
+		opacity: 0;
+		transform: translate(-32%, -30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-32%, -50%);
+	}
+}
+
+.pacote-group h4 {
+	font-family: 'AvenirNext', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #555555;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.pacote-options {
+	border: 1px solid #ADADAD;
+}
+
+.pacote-option {
+	position: relative;
+	padding: .5rem;
+	margin-bottom: 0;
+	width: 100%;
+	background-color: #FF0000;
+	color: #FFF;
+	font-family: 'OpenSans', Arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	user-select: none;
+}
+
+.pacote-option:first-child::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	background-color: #FF0000;
+	transform: rotate(45deg) translate(-15%, 85%);
+	z-index: 1;
+}
+
+.pacote-group .pacote-option:last-child {
+	background-color: #FFF;
+	color: #313131;
+}
+
+.pacote-option input {
+	position: absolute;
+}
+
+.pacote-option .pacote-label span {
+	font-size: 24px;
+}
+
+#login .bg-login {
+	position: absolute;
+	min-height: 250px;
+	width: 100%;
+	background: url(../assets/images/bg_conta.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+}
+
+#login .conta-title h1 {
+	font-family: 'Avenir';
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.login-form {
+	background-color: #FFF;
+	box-shadow: 0px 3px 16px rgba(0, 0, 0, .25);
+	border-radius: 5px;
+}
+
+.login-form .form-header h2 {
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.login-form .form-body {
+	border-top: 1px solid #CCCCCC;
+}
+
+.login-form .form-body p {
+	font-family: 'OpenSans', Arial, sans-serif;
+	font-size: 15px;
+}
+
+.login-form .form-body .input-cont a {
+	display: block;
+	color: #000;
+	text-decoration: underline;
+	font-family: 'OpenSans', Arial, sans-serif;
+	font-size: 12px;
+}
+
+.login-form .form-body .input-cont input {
+	border: 1px solid #CCCCCC;
+	padding: .6rem .8rem;
+	outline: 0;
+	font-size: 14px;
+}
+
+.login-form .form-body .btn-submit {
+	border: 0;
+	background-color: #FF0000;
+	color: #FFF;
+	font-family: 'OpenSans', Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 1rem 3.5rem;
+}
+
+@media (min-width: 1366px) {
+
+	.container {
+		max-width: 1364px;
+	}
+}
+
+@media (max-width: 1366px) {
+
+	#sobre .col-12 {
+		max-height: 810px;
+	}
+
+	#sobre .texto {
+		padding-bottom: 3rem;
+	}
+
+	#navbar .navbar-collapse .navbar-nav li:not(:last-child) {
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.estatisticas {
+		width: 80%;
+	}
+	
+	#posicao {
+		padding-top: 2rem;
+	}
+
+	#sobre {
+		max-height: none;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.title-stroke.white {
+		left: 0;
+		text-align: center;
+	}
+
+	.jogador-img {
+		margin-left: -250px;
+	}
+
+	#campo .campo-header .title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.title-stroke,
+	.title-stroke.white {
+		left: 0;
+		text-align: center;
+		font-size: 41px;
+	}
+
+	.texto h1 {
+		font-size: 51px;
+		letter-spacing: .3rem;
+	}
+
+	#sobre .title-stroke {
+		font-size: 58px;
+	}
+
+	#sobre h1 {
+		font-size: 60px;
+	}
+
+	#posicao h1 {
+		font-size: 44px;
+	}
+
+	#aftermovie .title-stroke {
+		font-size: 56px;
+	}
+
+	#depoimentos .title-stroke {
+		font-size: 50px;
+	}
+
+	#eventosAnteriores .title-stroke {
+		font-size: 53px;
+	}
+
+	#sobre .texto {
+		padding-bottom: 1rem;
+  	}
+
+	#sobre .col-12 {
+		max-height: none;
+	}
+
+	.stats-table tbody tr td:first-child {
+		font-size: 51px;
+	}
+
+	.stats-table tbody tr td:last-child {
+		font-size: 18px;
+	}
+	
+	.stats-table tbody tr td:last-child h3 {
+		font-size: 25px;
+	}
+	
+	.jogador-img {
+		margin: 0;
+	}
+
+	.jogador-img img,
+	.campo-img img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#aftermovie .texto {
+		position: absolute;
+		top: 13%;
+		left: 50%;
+		transform: translateX(-50%);
+  	}
+	
+	.links-footer .nav-item {
+		flex: 1 0 50%;
+	}
+
+	.title {
+		font-size: 35px;
+		line-height: 3rem;
+	}
+	
+	#campo .campo-header .title {
+		font-size: 39px;
+	}
+
+	.campo-forms label, .campo-forms input, .campo-forms select {
+		font-size: 16px;
+	}
+
+	.conta-title h1 {
+		font-size: 18px;
+	}
+
+	.btn-custom {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.container {
+		padding-left: 37px;
+		padding-right: 37px;
+	}
+
+	#login .row {
+		margin-left: -27px;
+		margin-right: -27px;
+	}
+
+	.btn-custom span {
+		padding-left: 2.8rem;
+		padding-right: 2.8rem;
+  	}
+}
