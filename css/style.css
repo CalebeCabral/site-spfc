@@ -464,8 +464,8 @@ body {
 }
 
 .campo-cont .posicao {
-	width: 5%;
-	height: 8%;
+	width: 4%;
+	height: 9%;
 	position: absolute;
 	background-color: #FFF;
 	border-radius: 50%;
@@ -531,20 +531,17 @@ body {
 
 .card-jogador {
 	position: absolute;
-	width: 13%;
-	height: 52%;
-	bottom: 2.8rem;
-	transform: translate(-20%, -60%);
-	cursor: default;
-	left: 70%;
+	width: 132px;
+	height: auto;
+	transform: translate(-50%, -1%);
 	overflow: visible;
 }
 
 .card-jogador .card-feixe {
-	position: absolute;
-	top: 90%;
 	z-index: 9;
-	width: 100%;
+	display: block;
+	max-width: 100%;
+	margin: -1rem auto 0rem;
 }
 
 #campo .card-jogador .card-dados {
@@ -638,18 +635,32 @@ body {
 	z-index: 1;
 }
 
-.card-jogador.opening {
-	/* animation: openingCards .5s; */
+.card-jogador.opening .card-bg {
+	animation: cardFade .4s .2s both;
 }
 
-@keyframes openingCards {
+.card-jogador.opening .card-feixe {
+	animation: lightFade 1s both;
+}
+
+@keyframes cardFade {
 	0% {
 		opacity: 0;
-		transform: translate(-20%, -40%);
+		transform: translateY(7%);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes lightFade {
+	0% {
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
-		transform: translate(-20%, -60%);
 	}
 }
 
@@ -790,11 +801,6 @@ body {
 	#navbar .navbar-collapse .navbar-nav li:not(:last-child) {
 		margin-right: 1rem;
 	}
-	
-	.card-jogador {
-		height: 43%;
-		transform: translate(-17%, -22%);
-	}
 }
 
 @media (max-width: 1200px) {
@@ -809,11 +815,6 @@ body {
 
 	#sobre {
 		max-height: none;
-	}
-	
-	.card-jogador {
-		height: 35.4%;
-    	transform: translate(-16%, 25%);
 	}
 
 	.card-jogador .card-dados__jogadores {
@@ -837,12 +838,7 @@ body {
 	}
 
 	.campo-bg {
-		margin-top: 9rem;
-	}
-	
-	.card-jogador {
-		height: 36%;
-    	transform: translate(-16%, 20%);
+		margin-top: 10rem;
 	}
 }
 
@@ -959,13 +955,11 @@ body {
 	}
 	
 	.card-jogador {
-		width: 17%;
-		height: 40%;
-		transform: translate(-20%, 22%);
+		width: 110px;
 	}
 
 	#campo .card-jogador .card-dados__jogadores {
-		padding-left: 0.4rem;
+		padding-left: 0.8rem;
 	}
 }
 
@@ -991,9 +985,7 @@ body {
 	}
 	
 	.card-jogador {
-		width: 25%;
-		transform: translate(-8%, -10%);
-		height: 36%;
+		width: 120px;
 	}
 
 	.campo-cont .posicao {
